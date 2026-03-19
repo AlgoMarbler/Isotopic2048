@@ -136,15 +136,17 @@ GameManager.prototype.move = function (direction) {
               merged.mergedFrom = [tile, next];
 
               if (merged.value == 8) {
-                  merged.unstable = 7;
+                  merged.unstable = 9;
               } else if (merged.value == 32) {
-                  merged.unstable = 37;
+                  merged.unstable = 49;
               } else if (merged.value == 128) {
-                  merged.unstable = 113;
+                  merged.unstable = 193;
               } else if (merged.value == 512) {
-                  merged.unstable = 225;
-              } else if (merged.value >= 1024) {
-                  merged.unstable = 385;
+                  merged.unstable = 313;
+              } else if (merged.value == 1024) {
+                  merged.unstable = 501;
+              } else if (merged.value >= 4096) {
+                  merged.unstable = 1001;
               } else {
                   merged.unstable = 0;
               }
