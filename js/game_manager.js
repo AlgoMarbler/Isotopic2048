@@ -138,13 +138,13 @@ GameManager.prototype.move = function (direction) {
               if (merged.value == 8) {
                   merged.unstable = 9;
               } else if (merged.value == 32) {
-                  merged.unstable = 49;
+                  merged.unstable = 43;
               } else if (merged.value == 128) {
-                  merged.unstable = 193;
+                  merged.unstable = 161;
               } else if (merged.value == 512) {
-                  merged.unstable = 313;
-              } else if (merged.value == 1024) {
                   merged.unstable = 501;
+              } else if (merged.value == 1024) {
+                  merged.unstable = 785;
               } else if (merged.value >= 4096) {
                   merged.unstable = 1001;
               } else {
